@@ -38,23 +38,23 @@ cd build
 ccmake ../
 ```
 
-An interactive GUI with several options will appear on the terminal. To understand how to set the options according to your preferences, refer to the [repositories overview]() section. When the options have been set, type `c` and then `g`. Finally, run `make` on the terminal.
+An interactive GUI with several options will appear on the terminal. To understand how to set the options according to your preferences, refer to the [repositories overview](https://github.com/gabrielenava/matlab-multi-body-sim_superbuild/blob/master/README.md#repositories-overview) section. When the options have been set, type `c` and then `g`. Finally, run `make` on the terminal.
 
 ## Repositories overview
 
-### Default repositories to be downloaded: 
+#### Default repositories to be downloaded: 
 
 - [matlab-multi-body-sim_core](https://github.com/gabrielenava/matlab-multi-body-sim_core), see also the associated [README](https://github.com/gabrielenava/matlab-multi-body-sim_core/blob/master/README.md).
 
-### Repos downloaded with option USE_MODELS = ON
+#### Repos downloaded with option `USE_MODELS = ON`
 
 - [matlab-multi-body-sim_models](https://github.com/gabrielenava/matlab-multi-body-sim_models), see also the associated [README](https://github.com/gabrielenava/matlab-multi-body-sim_models/blob/master/README.md).
 
-### Repos downloaded with option USE_APP = ON
+#### Repos downloaded with option `USE_APP = ON`
 
 - [matlab-multi-body-sim_app](https://github.com/gabrielenava/matlab-multi-body-sim_app), see also the associated [README](https://github.com/gabrielenava/matlab-multi-body-sim_app/blob/master/README.md).
 
-### Repos downloaded with option USE_EXTERNAL = ON
+#### Repos downloaded with option `USE_EXTERNAL = ON`
 
 - [FEX-minimize](https://github.com/rodyo/FEX-minimize), see also the associated [HTML](https://github.com/rodyo/FEX-minimize/tree/master/html).
 - [qpOASES](https://github.com/robotology-dependencies/qpOASES), see also the associated [README](https://github.com/robotology-dependencies/qpOASES/blob/master/README).
