@@ -1,6 +1,6 @@
 # matlab-multi-body-sim_superbuild
 
-Superbuild for collecting all the repositories related to the `matlab-multi-body-sim` simulator of multi-body system dynamics, kinematics and control.
+Superbuild for dowloading and installing all the repositories related to the `matlab-multi-body-sim`, a simulator of multi-body system dynamics, kinematics and control.
 
 ## Operating system
 
@@ -14,7 +14,7 @@ In order to be able to use the `matlab-multi-body-sim` and all the associated re
 - [Git](https://git-scm.com/), distributed version control system.
 - [CMake](https://cmake.org/), cross-platform compiler, tested with V3.0.
 
-At the moment, the following dependencies are also required: **NOTE: they will be included in the superbuild in a future release**
+The following dependencies are also required: **NOTE: they will be included in the superbuild in a future release.**
 
 - The [iDyntree](https://github.com/robotology/idyntree) library. To install `iDyntree` and its dependencies, refer to the [iDyntree README](https://github.com/robotology/idyntree#installation). When compiling `iDyntree`, it is required to set the option `IDYNTREE_USES_MATLAB` to `ON`. In order to use the [iDyntree bindings for Matlab](https://github.com/robotology/idyntree/tree/master/bindings/matlab), add to the Matlab path the `path/where/the/iDyntree/generated/mex/file/is`.
 
