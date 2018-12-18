@@ -56,5 +56,6 @@ An interactive GUI with several options will appear on the terminal. To understa
 
 #### Repos downloaded with option `USE_EXTERNAL = ON`
 
+- [FEX-function_handle](https://github.com/rodyo/FEX-function_handle), see also associated [doc](https://github.com/rodyo/FEX-function_handle/blob/master/function_handle.m).
 - [FEX-minimize](https://github.com/rodyo/FEX-minimize), see also the associated [HTML](https://github.com/rodyo/FEX-minimize/tree/master/html).
 - [qpOASES](https://github.com/robotology-dependencies/qpOASES), see also the associated [README](https://github.com/robotology-dependencies/qpOASES/blob/master/README).
