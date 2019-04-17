@@ -16,7 +16,7 @@ In order to be able to use the `matlab-multi-body-sim` and all the associated re
 
 The following dependencies are also required: **NOTE: they will be included in the superbuild in a future release.**
 
-- The [iDyntree](https://github.com/robotology/idyntree) library. To install `iDyntree` and its dependencies, refer to the [iDyntree README](https://github.com/robotology/idyntree#installation). When compiling `iDyntree`, it is required to set the option `IDYNTREE_USES_MATLAB` to `ON`. In order to use the [iDyntree bindings](https://github.com/robotology/idyntree/tree/master/bindings/matlab), and the [iDyntree wrappers](https://github.com/robotology/idyntree/tree/master/bindings/matlab/+iDynTreeWrappers) for Matlab, add to the Matlab path the `path/where/the/iDyntree/generated/mex/file/is`.
+- The [iDyntree](https://github.com/robotology/idyntree) library. To install `iDyntree` and its dependencies, refer to the [iDyntree README](https://github.com/robotology/idyntree#installation). When compiling `iDyntree`, it is required to set the option `IDYNTREE_USES_MATLAB` to `ON`. In order to use the [iDyntree bindings](https://github.com/robotology/idyntree/tree/master/bindings/matlab), and the [iDyntree wrappers](https://github.com/robotology/idyntree/tree/devel/bindings/matlab/+iDynTreeWrappers) for Matlab, add to the Matlab path the `path/where/the/iDyntree/generated/mex/file/is`.
 
 - **Optional**: for using the [iDyntree visualizer](https://github.com/robotology/idyntree/blob/master/src/visualization/src/Visualizer.cpp), it is also required to install the [Irrlicht](http://irrlicht.sourceforge.net/) library. To install the library on Ubuntu 18.04, just run on a terminal:
 
