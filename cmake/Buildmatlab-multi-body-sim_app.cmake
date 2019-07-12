@@ -6,11 +6,19 @@
 
 include(YCMEPHelper)
 
+#ycm_ep_helper(matlab-multi-body-sim_app TYPE GIT
+#              STYLE GITHUB
+#              REPOSITORY gabrielenava/matlab-multi-body-sim_app.git
+#              TAG master
+#              FOLDER main
+#              CONFIGURE_COMMAND ""
+#              BUILD_COMMAND ""
+#              INSTALL_COMMAND "")
+
+# Temporary fix for configuring the repo
 ycm_ep_helper(matlab-multi-body-sim_app TYPE GIT
               STYLE GITHUB
               REPOSITORY gabrielenava/matlab-multi-body-sim_app.git
               TAG master
-              FOLDER main
-              CONFIGURE_COMMAND ""
-              BUILD_COMMAND ""
-              INSTALL_COMMAND "")
+              FOLDER main)
+
