@@ -1,14 +1,14 @@
 #.rst:
-# BuildFEX-function_handle
+# BuildFEX-minimize
 # --------
 #
-# FEX-function_handle
+# FEX-minimize
 
 include(YCMEPHelper)
 
-ycm_ep_helper(FEX-function_handle TYPE GIT
+ycm_ep_helper(FEX-minimize TYPE GIT
               STYLE GITHUB
-              REPOSITORY rodyo/FEX-function_handle.git
+              REPOSITORY rodyo/FEX-minimize.git
               TAG master
               FOLDER external
               CONFIGURE ""
