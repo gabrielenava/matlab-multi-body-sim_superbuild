@@ -64,3 +64,6 @@ An interactive cmake GUI with several options will appear on the terminal. To un
 - [FEX-minimize](https://github.com/rodyo/FEX-minimize), see the associated [doc](https://github.com/rodyo/FEX-minimize/blob/master/minimize.m).
 - [qpOASES](https://github.com/robotology-dependencies/qpOASES), see the associated [README](https://github.com/robotology-dependencies/qpOASES/blob/master/README).
 
+## Mantainer
+
+Gabriele Nava ([@gabrielenava](https://github.com/gabrielenava)).
