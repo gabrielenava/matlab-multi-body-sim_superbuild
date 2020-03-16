@@ -10,7 +10,4 @@ ycm_ep_helper(mbs_app TYPE GIT
               STYLE GITHUB
               REPOSITORY gabrielenava/mbs_app.git
               TAG master
-              FOLDER mbs_root
-              CONFIGURE ""
-              BUILD ""
-              INSTALL "")
+              FOLDER mbs_root)

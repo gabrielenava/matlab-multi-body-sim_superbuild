@@ -39,29 +39,21 @@ if(NOT CMAKE_CONFIGURATION_TYPES)
     set(CMAKE_BUILD_TYPE "Release" CACHE STRING
         "Choose the type of build, recommanded options are: Debug or Release" FORCE)
     endif()
-    set(CODYCO_BUILD_TYPES "Debug" "Release" "MinSizeRel" "RelWithDebInfo")
-    set_property(CACHE CMAKE_BUILD_TYPE PROPERTY STRINGS ${CODYCO_BUILD_TYPES})
+    set(MBS_BUILD_TYPES "Debug" "Release" "MinSizeRel" "RelWithDebInfo")
+    set_property(CACHE CMAKE_BUILD_TYPE PROPERTY STRINGS ${MBS_BUILD_TYPES})
 endif()
 
 # Optionally load a file named ProjectsTags for overwriting the desired branch/tag/commit
 # of the included subprojects of the superbuild. Useful for having superbuild "branches"
 include(ProjectsTags OPTIONAL)
 
-# Set CMake policies
-if(NOT CMAKE_VERSION VERSION_LESS 3.0)
-    cmake_policy(SET CMP0045 NEW)
-    cmake_policy(SET CMP0046 NEW)
-endif()
-if(NOT CMAKE_VERSION VERSION_LESS 3.1)
-    cmake_policy(SET CMP0054 NEW)
-endif()
-
 # Bootstrap YCM
-set(YCM_TAG v0.9.0)
-
-# Workaround disabling hash warning until we fix https://github.com/robotology/codyco-superbuild/issues/162
-set(YCM_SKIP_HASH_CHECK TRUE)
+set(YCM_FOLDER external)
+set(YCM_COMPONENT core)
+set(YCM_TAG ad8bb257df45ffe70f949c74815bf803d7445b24)
+set(YCM_MINIMUM_VERSION 0.11.0)
 include(YCMBootstrap)
+
 include(FindOrBuildPackage)
 include(YCMEPHelper)
 
@@ -80,6 +72,9 @@ endif()
 if (${USES_APP})
   find_or_build_package(mbs_app)
 endif()
+
+# The following line is to properly configure the matlab and simulink software installed by the superbuild
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/cmake/templates/startup_mbs.m.in ${CMAKE_BINARY_DIR}/startup_mbs.m)
 
 # Other utilities
 set_package_properties(Git PROPERTIES TYPE RUNTIME)
