@@ -52,8 +52,8 @@ set(YCM_FOLDER external)
 set(YCM_COMPONENT core)
 set(YCM_TAG ad8bb257df45ffe70f949c74815bf803d7445b24)
 set(YCM_MINIMUM_VERSION 0.11.0)
-include(YCMBootstrap)
 
+include(YCMBootstrap)
 include(FindOrBuildPackage)
 include(YCMEPHelper)
 
