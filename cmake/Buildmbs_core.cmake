@@ -9,5 +9,5 @@ include(YCMEPHelper)
 ycm_ep_helper(mbs_core TYPE GIT
               STYLE GITHUB
               REPOSITORY gabrielenava/mbs_core.git
-              TAG master
+              TAG legacy
               FOLDER mbs_root)
