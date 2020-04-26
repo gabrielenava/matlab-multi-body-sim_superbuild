@@ -43,7 +43,7 @@ ccmake ../
 
 An interactive cmake GUI with several options will appear on the terminal. To understand how to set the options according to your preferences, refer to the next section [repositories overview](https://github.com/gabrielenava/matlab-multi-body-sim_superbuild/blob/master/README.md#repositories-overview). When the options have been set, type `c` and then `g`. Finally, run `make` on the terminal.
 
-### Configure MATLAB path
+#### Configure MATLAB path
 
 To properly configure the MATLAB path to mbs core functions, follow the instructions in the [mbs_core README](https://github.com/gabrielenava/mbs_core#installation-and-usage).
 
