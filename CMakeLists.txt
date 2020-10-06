@@ -59,11 +59,11 @@ include(YCMEPHelper)
 
 # Required repositories
 find_or_build_package(mbs_core)
-find_or_build_package(FEX-function_handle)
 
 # Optional repositories
 if (${USES_EXTERNAL})
   find_or_build_package(FEX-minimize)
+  find_or_build_package(FEX-function_handle)
   find_or_build_package(qpOASES)
 endif()
 if (${USES_MODELS})

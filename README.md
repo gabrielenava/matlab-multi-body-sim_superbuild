@@ -2,36 +2,27 @@
 
 Superbuild for dowloading and installing all the repositories related to the `multi-body simulator`, a simulator of multi-body system dynamics, kinematics and control based on [iDyntree](https://github.com/robotology/idyntree) and [Matlab](https://it.mathworks.com/products/matlab.html).
 
-
 ## Operating system
 
-The code has been developed and tested on Ubuntu 18.04 LTS.
-
+The code has been developed and tested on Ubuntu 18.04.5 LTS.
 
 ## External dependencies
 
 In order to be able to use the `multi-body simulator` and all the associated repositories, the following software must be installed on your pc:
 
-- [Matlab](https://it.mathworks.com/products/matlab.html), tested with `R2018a`.
+- [Matlab](https://it.mathworks.com/products/matlab.html), tested with `R2020a`.
 - [Git](https://git-scm.com/), distributed version control system.
-- [CMake](https://cmake.org/), cross-platform compiler, tested with V3.0.
+- [CMake](https://cmake.org/), cross-platform compiler, tested with `V3.16.4`.
 
 The following dependencies are also required: **NOTE: they may be included in the superbuild in a future release.**
 
 - The [iDyntree](https://github.com/robotology/idyntree) library. To install `iDyntree` and its dependencies, refer to the [iDyntree README](https://github.com/robotology/idyntree#installation). When compiling `iDyntree`, it is required to set the option `IDYNTREE_USES_MATLAB` to `ON`. In order to use the [iDyntree bindings](https://github.com/robotology/idyntree/tree/master/bindings/matlab), and the [iDyntree wrappers](https://github.com/robotology/idyntree/tree/master/bindings/matlab/+iDynTreeWrappers) for Matlab, add to the Matlab path the `path/where/the/iDyntree/generated/mex/file/is`.
 
-- **Optional**: for using the [iDyntree visualizer](https://github.com/robotology/idyntree/blob/master/src/visualization/src/Visualizer.cpp), it is also required to install the [Irrlicht](http://irrlicht.sourceforge.net/) library. To install the library on Ubuntu 18.04, just run on a terminal:
-
-   ```
-   sudo apt-get install libirrlicht-dev
-   ```
-
 - **Optional**: an external library of Matlab function for multi-body system dynamics, kinematics and control is available inside [whole-body-controllers](https://github.com/robotology/whole-body-controllers). To download the library, follow the instructions in the [whole-body-controllers README](https://github.com/robotology/whole-body-controllers/blob/master/README.md#installation-and-usage).
-
 
 ## Installation and usage
 
-### Ubuntu 18.04
+### Ubuntu 18.04.5
 
 `git clone` the repository on your pc. Then, enter in the cloned folder, open a terminal and run:
 
@@ -52,7 +43,6 @@ To properly configure the MATLAB path to mbs core functions, follow the instruct
 ### Default repositories to be downloaded: 
 
 - [mbs_core](https://github.com/gabrielenava/mbs_core), see the associated [README](https://github.com/gabrielenava/mbs_core/blob/master/README.md).
-- [FEX-function_handle](https://github.com/rodyo/FEX-function_handle), see the associated [doc](https://github.com/rodyo/FEX-function_handle/blob/master/function_handle.m).
 
 ### Repos downloaded with the option `USE_MODELS = ON`
 
@@ -64,9 +54,11 @@ To properly configure the MATLAB path to mbs core functions, follow the instruct
 
 ### Repos downloaded with the option `USE_EXTERNAL = ON`
 
+- [FEX-function_handle](https://github.com/rodyo/FEX-function_handle), see the associated [doc](https://github.com/rodyo/FEX-function_handle/blob/master/function_handle.m).
 - [FEX-minimize](https://github.com/rodyo/FEX-minimize), see the associated [doc](https://github.com/rodyo/FEX-minimize/blob/master/minimize.m).
 - [qpOASES](https://github.com/robotology-dependencies/qpOASES), see the associated [README](https://github.com/robotology-dependencies/qpOASES/blob/master/README).
 
 ## Mantainer
 
 Gabriele Nava ([@gabrielenava](https://github.com/gabrielenava)).
+
